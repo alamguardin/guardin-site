@@ -14,6 +14,7 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -21,16 +22,24 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		/* Pallete */
+		--primary: #FAFAFA;
+		--secundary: #C0C1BE;
+		--accent: #121211;
+		--divider: #1C1D1B;
+
+		/* Basic styles */
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		background: var(--accent);
+		color: var(--primary);
+
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+
+	a {
+		text-decoration: none;
 	}
 </style>
