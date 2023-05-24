@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
+import ProductCard from '../components/ProductCard.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -22,10 +22,28 @@ import Navbar from '../components/Navbar.astro';
 	</div>
 	<!-- Main content -->
 	<main>
+		<!-- Lasts products -->
+		<section class="products">
+			<h2 class="products-title">Creando...</h2>
+			<div class="products-content">
+				<ProductCard 
+					href="#"
+					title="Mi product"
+					description="This is my new product, its free and learning ease"
+				></ProductCard>
+				<ProductCard 
+					href="#"
+					title="Other Product"
+					description="Other product for earn money, becuase i don't have munch money"
+				></ProductCard>
+			</div>
+			<a href="#" class="products-link">Ver mas productos</a>
+		</section>
 	</main>
 </Layout>
 
 <style>
+	/* Hero Styles */
 	.hero-container {
 		max-width: 1120px;
 		min-height: calc(100vh - 100px);
@@ -60,5 +78,30 @@ import Navbar from '../components/Navbar.astro';
 		height: 500px;
 		background: var(--secundary);
 		border-radius: 10px;
+	}
+
+	/* Products section styles */
+	.products {
+		max-width: 1120px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.products-title {
+		font-size: 1.5em;
+	}
+
+	.products-content {
+		margin: 2.5em 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	.products-link {
+		font-size: 0.875em;
+		font-weight: 600;
+		color: var(--primary);
+		text-decoration: underline;
 	}
 </style>

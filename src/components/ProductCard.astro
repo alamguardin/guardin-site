@@ -1,0 +1,60 @@
+---
+const { href, title, description } = Astro.props;
+---
+
+<div class="product">
+	<div class="product-picture">
+		<div class="product-image">
+			<!-- IMG -->
+		</div>
+	</div>
+	<div class="product-content">
+		<h3 class="product-title">{title}</h3>
+		<p class="product-description">{description}</p>
+		<a href={href} class="product-link">
+			<i class='bx bx-right-arrow-alt'></i>
+		</a>
+	</div>
+</div>
+
+<style>
+	.product {
+		background: var(--divider);
+		padding: 1.25em;
+		border-radius: 0.625em;
+		display: flex;
+		align-items: flex-start;
+		gap: 1.25em;
+		position: relative;
+	}
+
+	.product-image {
+		width: 140px;
+		height: 140px;
+		background: var(--secundary);
+		border-radius: 0.5em;
+	}
+
+	.product-title {
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	.product-description {
+		color: var(--secundary);
+	}
+
+	.product-link {
+		position: absolute;
+		font-size: 1.5em;
+		right: 1.25rem;
+		bottom: 1.25rem;
+		color: var(--secundary);
+		transform: rotate(-45deg);
+		transition: color .2s ease;
+	}
+
+	.product-link:hover {
+		color: var(--primary);
+	}
+</style>
