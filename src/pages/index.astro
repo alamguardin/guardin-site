@@ -5,7 +5,60 @@ import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<Navbar></Navbar>
+	<!-- Hero section -->
+	<div class="hero">
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1 class="hero-title">¡Hola! soy Alam<br><span>Web Developer y mas...</span></h1>
+				<p class="hero-description">Inicie en el mundo del desarrollo; Ahora quiero probar otras cosas... como crear contenido, diseño, negocios en línea etc.</p>
+			</div>
+			<div class="hero-picture">
+				<div class="hero-image">
+					<!-- IMG -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main content -->
 	<main>
-		<Navbar></Navbar>
 	</main>
 </Layout>
+
+<style>
+	.hero-container {
+		max-width: 1120px;
+		min-height: calc(100vh - 100px);
+		width: 90%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hero-content {
+		max-width: 500px;
+	}
+
+	.hero-title {
+		font-size: 2.25em;
+	}
+
+	.hero-title span {
+		background: linear-gradient(90deg, var(--secundary), var(--divider));
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.hero-description {
+		color: var(--secundary)
+	}
+
+	.hero-image {
+		width: 450px;
+		height: 500px;
+		background: var(--secundary);
+		border-radius: 10px;
+	}
+</style>
