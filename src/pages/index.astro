@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import ProductCard from '../components/ProductCard.astro';
+import PostCard from '../components/PostCard.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -23,9 +24,9 @@ import ProductCard from '../components/ProductCard.astro';
 	<!-- Main content -->
 	<main>
 		<!-- Lasts products -->
-		<section class="products">
-			<h2 class="products-title">Creando...</h2>
-			<div class="products-content">
+		<section class="section">
+			<h2 class="section-title">Creando...</h2>
+			<div class="section-content">
 				<ProductCard 
 					href="#"
 					title="Mi product"
@@ -37,7 +38,29 @@ import ProductCard from '../components/ProductCard.astro';
 					description="Other product for earn money, becuase i don't have munch money"
 				></ProductCard>
 			</div>
-			<a href="#" class="products-link">Ver mas productos</a>
+			<a href="#" class="section-link">Ver mas productos</a>
+		</section>
+		<!-- Last Posts -->
+		<section class="section">
+			<h2 class="section-title">Ultimos articulos</h2>
+			<div class="section-content col-3">
+				<PostCard
+					href="#"
+					title="This is mi title for mi new article"
+					description="Its a article about UI/UX, Data Science, Product Design, Programming and Computer Science for beginner in new technologies"
+				></PostCard>
+				<PostCard
+					href="#"
+					title="This is mi title for mi new article"
+					description="Its a article about UI/UX, Data Science, Product Design, Programming and Computer Science for beginner in new technologies"
+				></PostCard>
+				<PostCard
+					href="#"
+					title="This is mi title for mi new article"
+					description="Its a article about UI/UX, Data Science, Product Design, Programming and Computer Science for beginner in new technologies"
+				></PostCard>
+			</div>
+			<a href="#" class="section-link">Ver mas productos</a>
 		</section>
 	</main>
 </Layout>
@@ -70,7 +93,8 @@ import ProductCard from '../components/ProductCard.astro';
 	}
 
 	.hero-description {
-		color: var(--secundary)
+		color: var(--secundary);
+		margin-top: 1.25em;
 	}
 
 	.hero-image {
@@ -81,24 +105,30 @@ import ProductCard from '../components/ProductCard.astro';
 	}
 
 	/* Products section styles */
-	.products {
+	.section {
 		max-width: 1120px;
 		width: 90%;
 		margin: auto;
+		margin-bottom: 2.5em;
 	}
 
-	.products-title {
+	.section-title {
 		font-size: 1.5em;
 	}
 
-	.products-content {
+	.section-content {
 		margin: 2.5em 0;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 20px;
 	}
 
-	.products-link {
+	.section-content.col-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+	.section-link {
 		font-size: 0.875em;
 		font-weight: 600;
 		color: var(--primary);
