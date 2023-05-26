@@ -1,0 +1,85 @@
+<form class="form">
+    <div class="form-heading">
+        <h2 class="form-title">Necesitas de mi<br><span>colaboración</span></h2>
+    </div>
+    <div class="form-inputs">
+        <input type="text" class="form-control" placeholder="Escribe tu nombre">
+        <textarea class="form-control" placeholder="Dime como puedo ayudarte"></textarea>
+        <button class="form-button">Enviar</button>
+    </div>
+</form>
+
+<style>
+    .form {
+        min-width: 300px;
+    }
+
+    .form-heading {
+        margin-bottom: 1.25em;
+    }
+
+    .form-title {
+        font-size: 1.5em;
+        color: var(--secundary);
+        font-weight: 400;
+    }
+
+    .form-title span {
+        font-weight: 600;
+        color: var(--primary);
+    }
+
+    .form-inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25em;
+    }
+
+    .form-control {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 0.875em;
+        font-weight: 600;
+        padding: 0.9375rem 1.25rem;
+        border: 1px solid transparent;
+        outline: none;
+        border-radius: 0.625rem;
+        background: var(--accent);
+        color: var(--secundary);
+    }
+
+    textarea.form-control {
+        height: 100px;
+        resize: none;
+    }
+
+    .form-control::placeholder {
+        color: var(--secundary);
+    }
+
+    .form-control:focus {
+        border-color: var(--primary);
+    }
+
+    .form-button {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 0.875em;
+        font-weight: 600;
+        padding: 0.9375rem 1.25rem;
+        border: none;
+        outline: none;
+        border-radius: 0.625rem;
+        background: var(--primary);
+        color: var(--divider);
+        cursor: pointer;
+        transition: .2s all ease;
+    }
+
+    .form-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 40px 6px rgba(255, 255, 255, 0.2);
+    }
+
+    .form-button:active {
+        transform: scale(0.9);
+    }
+</style>
