@@ -23,24 +23,31 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	@font-face {
-		font-family: Sora;
-		src: url(../../fonts/Sora-Regular.ttf);
+		font-family: Title;
+		src: url(../../fonts/Sora-Regular.ttf)format("truetype");
 	}
 
 	@font-face {
-		font-family: Manrope;
-		src: url(../../fonts/Manrope-Regular.ttf);
+		font-family: Paragraph;
+		src: url(../../fonts/Manrope-Regular.ttf)format("truetype");
 	}
 
 	@font-face {
-		font-family: Manrope-semibold;
-		src: url(../../fonts/Manrope-SemiBold.ttf);
+		font-family: Button;
+		src: url(../../fonts/Manrope-SemiBold.ttf)format("truetype");
 	}
 
 	:root {
+		/* Pallete */
+		--primary-text: #FAFAFA;
+		--secundary-text: #C1C0BE;
+		--accent: #1C1D1B;
+		--background: #121211;
 		/* Basic styles */
-		font-family: Manrope, Arial, Helvetica, sans-serif;
+		font-family: Paragraph, Arial, Helvetica, sans-serif;
 		font-size: 16px;
+		background: var(--background);
+		color: var(--primary-text);
 	}
 
 	*, *::after, *::before {
@@ -50,5 +57,22 @@ const { title } = Astro.props;
 
 	a {
 		text-decoration: none;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	h1, h2 {
+		display: inline-block;
+		text-align: center;
+		font-size: 38px;
+		font-family: Title;
+		background: #FAFAFA;
+		background: -webkit-linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
+		background: -moz-linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
+		background: linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>
