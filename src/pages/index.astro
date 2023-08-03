@@ -1,12 +1,62 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import UserImage from '../assets/img-user.jpeg'
 ---
 
 <Layout title="Welcome to Astro.">
 	<Navbar></Navbar>
+	<!-- Hero Section -->
+	<header class="hero">
+		<div class="container">
+			<figure class="user__picture">
+				<img src={UserImage} alt="">
+				<figcaption class="user__name">¡Hola! Soy Alam 👋</figcaption>
+			</figure>
+			<h1>Construyendo<br>Productos digitales<br>Webs y experiencia</h1>
+		</div>
+	</header>
 </Layout>
 
 <style>
+
+	.hero {
+		width: 100%;
+		height: calc(100vh - 65px);
+	}
+
+	.container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.hero .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* User image styles */
+	.user__picture {
+		margin-top: 3.125em;
+		text-align: center;
+	}
+
+	.user__picture img {
+		max-width: 100px;
+		max-height: 100px;
+		border-radius: 100%;
+	}
+
+	.user__name {
+		margin-top: 1.25em;
+		font-family: Button;;
+		font-size: 0.875em;
+		color: var(--secundary-text);
+	}
+
+	.hero h1 {
+		margin: 3.125rem 0;
+	}
 	
 </style>
