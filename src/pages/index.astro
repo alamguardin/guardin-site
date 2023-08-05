@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Product from '../components/Product.astro';
 import UserImage from '../assets/img-user.jpeg'
 ---
 
@@ -19,6 +20,14 @@ import UserImage from '../assets/img-user.jpeg'
 			</a>
 		</div>
 	</header>
+	<main>
+		<section class="container">
+			<h2>Construyendo</h2>
+			<div class="products">
+				<Product title='My new product' description='This is a description of my product'></Product>
+			</div>
+		</section>
+	</main>
 </Layout>
 
 <style>
