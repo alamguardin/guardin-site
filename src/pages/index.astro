@@ -25,6 +25,9 @@ import UserImage from '../assets/img-user.jpeg'
 			<h2>Construyendo</h2>
 			<div class="products">
 				<Product title='My new product' description='This is a description of my product'></Product>
+				<Product title='My new product' description='This is a description of my product'></Product>
+				<Product title='My new product' description='This is a description of my product'></Product>
+				<Product title='My new product' description='This is a description of my product'></Product>
 			</div>
 		</section>
 	</main>
@@ -69,6 +72,25 @@ import UserImage from '../assets/img-user.jpeg'
 
 	.hero h1 {
 		margin: 3.125rem 0;
+	}
+
+	/* main section */
+	main {
+		margin: 6.25em 0 3.75em 0;
+	}
+
+	main section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	/* Products Section */
+	.products {
+		margin-top: 3.75em;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px
 	}
 	
 </style>
