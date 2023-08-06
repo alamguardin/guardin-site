@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Product from '../components/Product.astro';
+import Article from '../components/Article.astro';
 import UserImage from '../assets/img-user.jpeg'
 ---
 
@@ -28,6 +29,14 @@ import UserImage from '../assets/img-user.jpeg'
 				<Product title='My new product' description='This is a description of my product'></Product>
 				<Product title='My new product' description='This is a description of my product'></Product>
 				<Product title='My new product' description='This is a description of my product'></Product>
+			</div>
+		</section>
+		<section class="container">
+			<h2>Ultimos articulos</h2>
+			<div class="articles">
+				<Article title='' description=''></Article>
+				<Article title='' description=''></Article>
+				<Article title='' description=''></Article>
 			</div>
 		</section>
 	</main>
@@ -92,5 +101,15 @@ import UserImage from '../assets/img-user.jpeg'
 		grid-template-columns: 1fr 1fr;
 		gap: 20px
 	}
-	
+	/* Articles styles */
+	section:nth-child(2) h2 {
+		margin: 3.75rem 0;
+	}
+
+	.articles {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px;
+	}
+
 </style>
