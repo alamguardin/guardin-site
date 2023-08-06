@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Product from '../components/Product.astro';
 import Article from '../components/Article.astro';
+import Form from '../components/Form.astro'
 import UserImage from '../assets/img-user.jpeg'
 ---
 
@@ -38,6 +39,10 @@ import UserImage from '../assets/img-user.jpeg'
 				<Article title='' description=''></Article>
 				<Article title='' description=''></Article>
 			</div>
+		</section>
+		<section class="container">
+			<h2>Dime sobre tu<br>siguiente proyecto</h2>
+			<Form></Form>
 		</section>
 	</main>
 </Layout>
@@ -110,6 +115,10 @@ import UserImage from '../assets/img-user.jpeg'
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 40px;
+	}
+	/* Form section */
+	section:nth-child(3) h2 {
+		margin: 3.75rem 0;
 	}
 
 </style>
