@@ -14,7 +14,6 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -22,91 +21,5 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	@font-face {
-		font-family: Title;
-		src: url(../../fonts/Sora-Regular.ttf)format("truetype");
-	}
-
-	@font-face {
-		font-family: Paragraph;
-		src: url(../../fonts/Manrope-Regular.ttf)format("truetype");
-	}
-
-	@font-face {
-		font-family: Button;
-		src: url(../../fonts/Manrope-SemiBold.ttf)format("truetype");
-	}
-
-	:root {
-		/* Pallete */
-		--primary-text: #FAFAFA;
-		--secundary-text: #C1C0BE;
-		--accent: #1C1D1B;
-		--background: #121211;
-		/* Basic styles */
-		font-family: Paragraph, Arial, Helvetica, sans-serif;
-		font-size: 16px;
-		background: var(--background);
-		color: var(--primary-text);
-	}
-
-	*, *::after, *::before {
-		margin: 0;
-		padding: 0;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	img {
-		max-width: 100%;
-	}
-
-	h1, h2 {
-		display: inline-block;
-		text-align: center;
-		font-size: 3rem;
-		font-weight: normal;
-		font-family: Title;
-		background: #FAFAFA;
-		background: -webkit-linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
-		background: -moz-linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
-		background: linear-gradient(90deg, #FAFAFA 0%, #1F1F1F 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	.button {
-		position: relative;
-		display: inline-block;
-		font-family: Button;
-		font-size: 0.875em;
-		color: var(--secundary-text);
-		padding: 1.25em 2.5em;
-		background: linear-gradient(90deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);;
-		border: none;
-		outline: none;
-		border-radius: 3.125em;
-		transition: .2s all ease;
-		z-index: 1;
-	}
-
-	.button::after {
-		content: '';
-		position: absolute;
-		top: 1px;
-		left: 1px;
-		right: 1px;
-		bottom: 1px;
-		background: var(--accent);
-		border-radius: 3.125em;
-		z-index: -2;
-	}
-	
-	.button:hover {
-		color: var(--primary-text);
-		transform: translateY(-5px);
-	}
 
 </style>
