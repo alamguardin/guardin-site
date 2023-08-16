@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Sora&display=swap');
+@import url('./general.css');
+@import url('./navbar.css');
+
+:root {
+    /* Colors */
+    --black: #121211;
+    --white: #FAFAFA;
+    --gray: #C1C0BE;
+    --gray-dark: #1C1D1B;
+    --purple: #673AB7;
+
+    /* Fonts */
+    --font-title: 'Sora', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+    --primary-text: var(--white);
+    --secundary-text: var(--gray);
+}
