@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Sora&display=swap');
 @import url('./general.css');
 @import url('./navbar.css');
+@import url('./hero.css');
 
 :root {
     /* Colors */
