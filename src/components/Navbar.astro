@@ -19,3 +19,15 @@
         </button>
     </nav>
 </header>
+
+<script>
+    const linksMenu = document.getElementById('links-menu')
+    const socialMenu = document.getElementById('social-menu')
+    const menuSwitchButton = document.getElementById('menu-switch-button')
+
+    menuSwitchButton.addEventListener('click', () => {
+        menuSwitchButton.classList.toggle('active')
+        linksMenu.classList.toggle('active')
+        socialMenu.classList.toggle('active')
+    })
+</script>

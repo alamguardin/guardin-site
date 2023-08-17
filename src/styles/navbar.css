@@ -4,6 +4,7 @@
 }
 
 .navbar__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -45,4 +46,33 @@
 
 .navbar__button.active {
     color: var(--primary-text);
+}
+
+@media screen and (max-width: 640px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__links.active {
+        position: absolute;
+        right: 0;
+        top: 1.5625em;
+        min-width: 9.375em;
+        display: flex;
+        flex-direction: column;
+        background: var(--black);
+        border: 1px solid var(--gray-dark);
+        padding: 0.9375em 1.25em;
+        border-radius: 0.625em;
+    }
+
+    .navbar__links#social-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        top: 12.5em;
+    }
+
+    .navbar__button {
+        display: block;
+    }
 }
