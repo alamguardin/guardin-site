@@ -11,14 +11,38 @@ body {
     background: var(--black);
 }
 
+/* Layout */
 .container {
     max-width: 1120px;
     width: 90%;
     margin: auto;
 }
 
+.col-2, .col-3 {
+    display: grid;
+    gap: 1.25em;
+    margin: 2.5em 0;
+}
+
+.col-2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.col-3 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Text */
 a {
     text-decoration: none;
+}
+
+.subtitle {
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 2.25em;
+    color: var(--secundary-text);
+    text-align: center;
 }
 
 /* Default button styles */
@@ -45,5 +69,9 @@ a {
 @media screen and (max-width: 640px) {
     body {
         font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
     }
 }

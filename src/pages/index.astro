@@ -2,9 +2,28 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import user from '../assets/img-user.jpeg'
 ---
 
 <Layout title="Welcome to Astro.">
 	<Navbar></Navbar>
-	<Hero></Hero>
+	<main>
+		<Hero></Hero>
+		<section class="container">
+			<h2 class="subtitle">Construyendo</h2>
+			<div class="col-2">
+				<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+				<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+			</div>
+		</section>
+		<section class="container">
+			<h2 class="subtitle">Ultimos articulos</h2>
+			<div class="col-3">
+				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+			</div>
+		</section>
+	</main>
 </Layout>
