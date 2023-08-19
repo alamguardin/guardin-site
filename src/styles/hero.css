@@ -6,6 +6,7 @@
 
 .hero__container {
     max-width: 600px;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -19,8 +20,8 @@
 }
 
 .hero__picture img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 6.25em;
+    max-height: 6.25em;
     border-radius: 100%;
 }
 
@@ -40,5 +41,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
+@media screen and (max-width: 640px) {
+    .hero {
+        height: auto;
+        margin: 3.75em auto;
+    }
+
+
+
+    .hero__title {
+        font-size: 1.875em;
+        margin: 1.875rem;
+    }
 }

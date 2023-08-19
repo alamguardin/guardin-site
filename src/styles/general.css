@@ -21,11 +21,29 @@ a {
     text-decoration: none;
 }
 
+/* Default button styles */
 .btn-default {
     padding: 0.9375rem 2.5rem;
-    font-size: 14px;
+    font-size: 0.875em;
     color: var(--purple);
     background: rgba(103, 58, 183, 0.15);
     border: 1px solid var(--purple);
     border-radius: 3.125rem;
+    transition: .2s all ease;
+}
+
+.btn-default:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 30px 10px rgba(103, 58, 183, 0.15);
+}
+
+.btn-default:active {
+    transform: scale(0.98);
+}
+
+/* styles for devices with a size less than or equal to 640px */
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
 }
