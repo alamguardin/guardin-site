@@ -6,33 +6,28 @@ import Card from '../components/Card.astro';
 import Form from '../components/Form.astro';
 import Footer from '../components/Footer.astro';
 import user from '../assets/img-user.jpeg'
-
-
 ---
 
 <Layout title="Welcome to Astro.">
-	<Navbar></Navbar>
-	<main>
-		<Hero></Hero>
-		<section class="container">
-			<h2 class="subtitle">Construyendo</h2>
-			<div class="col-2">
-				<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-				<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-			</div>
-		</section>
-		<section class="container">
-			<h2 class="subtitle">Ultimos articulos</h2>
-			<div class="col-3">
-				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-				<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-			</div>
-		</section>
-		<section class="container">
-			<h2 class="subtitle">Contactame</h2>
-			<Form></Form>
-		</section>
-	</main>
+	<Hero></Hero>
+	<section class="container">
+		<h2 class="subtitle">Construyendo</h2>
+		<div class="col-2">
+			<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+			<Card url='google.com' image={user} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+		</div>
+	</section>
+	<section class="container">
+		<h2 class="subtitle">Ultimos articulos</h2>
+		<div class="col-3">
+			<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+			<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+			<Card url='google.com' image='' title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
+		</div>
+	</section>
+	<section class="container">
+		<h2 class="subtitle">Contactame</h2>
+		<Form></Form>
+	</section>
 	<Footer></Footer>
 </Layout>

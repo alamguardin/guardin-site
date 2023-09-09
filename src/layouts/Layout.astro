@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import Navbar from '../components/Navbar.astro';
 import '../styles/styles.css'
 ---
 
@@ -19,9 +20,9 @@ import '../styles/styles.css'
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<Navbar></Navbar>
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
-<style is:global>
-
-</style>
