@@ -1,0 +1,79 @@
+<section class="galery">
+    <h2 class="subtitle">Mis ultimos proyectos</h2>
+    <div class="galery__content">
+        <div class="picture">
+            <img src="https://cdn.dribbble.com/userupload/9816857/file/original-03ba6fd62442485a8cf7f1c5b7877bdb.png?resize=752x" alt="">
+            <div class="picture__content">
+                <h3 class="picture__title">Lorem ipsum dolor</h3>
+                <p class="picture__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet possimus quis corporis quasi veniam itaque asperiores, consequatur quos ratione accusantium et a atque cumque doloremque voluptates quisquam! Deserunt.</p>
+                <div class="picture__tags">
+                    <span class="picture__tag">React</span>
+                    <span class="picture__tag">Nest.js</span>
+                </div>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="https://cdn.dribbble.com/userupload/9875793/file/original-bccf94a11f5d4bbecc0b47809011405f.png?resize=752x" alt="">
+            <div class="picture__content">
+                <h3 class="picture__title">Lorem ipsum dolor</h3>
+                <p class="picture__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet possimus quis corporis quasi veniam itaque asperiores, consequatur quos ratione accusantium et a atque cumque doloremque voluptates quisquam! Deserunt.</p>
+                <div class="picture__tags">
+                    <span class="picture__tag">React</span>
+                    <span class="picture__tag">Nest.js</span>
+                </div>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="https://cdn.dribbble.com/userupload/9654880/file/original-bc52b6629336f0c1413679e37393190e.png?resize=752x" alt="">
+            <div class="picture__content">
+                <h3 class="picture__title">Lorem ipsum dolor</h3>
+                <p class="picture__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet possimus quis corporis quasi veniam itaque asperiores, consequatur quos ratione accusantium et a atque cumque doloremque voluptates quisquam! Deserunt.</p>
+                <div class="picture__tags">
+                    <span class="picture__tag">React</span>
+                    <span class="picture__tag">Nest.js</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .galery__content {
+        max-width: 800px;
+        width: 90%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .picture {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .picture__content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(50px);
+    }
+
+    .picture:hover .picture__content {
+        display: block;
+    }
+</style>
