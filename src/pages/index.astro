@@ -1,16 +1,19 @@
 ---
+// Layout
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
+// Components
 import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Galery from '../components/Galery.astro';
 import Card from '../components/Card.astro';
 import Form from '../components/Form.astro';
-import Footer from '../components/Footer.astro';
+// Files
 import user from '../assets/img-user.jpeg'
-import Galery from '../components/Galery.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<Hero></Hero>
+	<About></About>
 	<Galery></Galery>
 	<section class="container">
 		<h2 class="subtitle">Construyendo</h2>
