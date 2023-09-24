@@ -5,6 +5,7 @@ export interface Props {
 
 const { title } = Astro.props;
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/styles.css'
 ---
 
@@ -24,5 +25,6 @@ import '../styles/styles.css'
 		<main>
 			<slot />
 		</main>
+		<Footer></Footer>
 	</body>
 </html>
