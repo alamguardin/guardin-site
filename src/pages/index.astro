@@ -5,23 +5,15 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Galery from '../components/Galery.astro';
-import Card from '../components/Card.astro';
+import Building from '../components/Building.astro';
 import Form from '../components/Form.astro';
-// Files
-import user from '../assets/img-user.jpeg'
 ---
 
 <Layout title="Welcome to Astro.">
 	<Hero></Hero>
 	<About></About>
 	<Galery></Galery>
-	<section class="container">
-		<h2 class="subtitle">Construyendo</h2>
-		<div class="col-2">
-			<Card url='google.com' image={user.src} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-			<Card url='google.com' image={user.src} title='Lorem ipsum dolor' description='Lorem ipsum dolor sit amet cuase baby dont forget assistant importance between us plain complain place in your eyes for given rivers side of the dark, get request in your put side favorite heart providers of you service or local services for get bests results request in your put side favorite heart providers'></Card>
-		</div>
-	</section>
+	<Building></Building>
 	<section class="container">
 		<h2 class="subtitle">Contactame</h2>
 		<Form></Form>
