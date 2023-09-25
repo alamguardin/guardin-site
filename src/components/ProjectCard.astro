@@ -1,0 +1,30 @@
+---
+export interface Props {
+    image: string;
+    title: string;
+    tags: string[];
+    sourceCode: string;
+    site: string;
+}
+
+const {image, title, tags, sourceCode, site} = Astro.props
+---
+<div class="project">
+    <picture class="project__picture">
+        <img src={image} alt="" class="project__image">
+    </picture>
+    <div class="project__content">
+        <div class="project__container">
+            <div class="project__info">
+                <h3 class="project__title">{title}</h3>
+                <div class="project__tags">
+                    {tags.map((tag) => (<span class="project__tag">{tag}</span>))}
+                </div>
+            </div>
+            <div class="project__links">
+                <a href={site} class="project__link">View</a>
+                <a href={sourceCode} class="project__link">Code</a>
+            </div>
+        </div>
+    </div>
+</div>
