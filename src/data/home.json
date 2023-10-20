@@ -1,0 +1,55 @@
+{
+    "hero": {
+      "greeting": "¡Hola! Soy Alam 👋",
+      "title": "Construyendo productos digitales, webs y experiencia"
+    },
+    "building": {
+      "legend": "Me gusta trabajar en diferentes proyectos , mira que estoy construyendoactualmente...",
+      "title": "Construyendo ⚡",
+      "list": [
+        {
+          "brand": "url",
+          "name": "Goodmorphism",
+          "description": "Generador de morfismos de vidrio con css",
+          "url": "https://goodmorphism.vercel.app/"
+        }
+      ]
+    },
+    "products": {
+      "title": "Productos mas populares 🔥",
+      "list": [
+        {
+          "thumbnail": "url",
+          "tag": "Free",
+          "title": "Something",
+          "url": "url"
+        }
+      ]
+    },
+    "contact": {
+      "legend": "Si tienes un proyecto en mente, o necesitas un sitio web a medida puedes llenar el formulario y contarme mas...",
+      "title": "Contactame",
+      "social": [
+        {
+          "icon": "icon-name",
+          "url": "url"
+        },
+        {
+          "icon": "icon-name",
+          "url": "url"
+        },
+        {
+          "icon": "icon-name",
+          "url": "url"
+        },
+        {
+          "icon": "icon-name",
+          "url": "url"
+        },
+        {
+          "icon": "icon-name",
+          "url": "url"
+        }
+      ]
+    }
+  }
