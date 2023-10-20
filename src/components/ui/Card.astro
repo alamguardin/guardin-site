@@ -11,10 +11,11 @@ const { url, image, title, description } = Astro.props
 
 <a href={url} class="card">
     <div class="card__heading">
-        {image && <img src={image} class="card__image"/>}
-        <h3 class="card__title">{title}</h3>
+        <img src={image} class="card__image"/>
+        <h3 class="subtitle">{title}</h3>
     </div>
     <div class="card__body">
         <p class="card__description">{description}</p>
+        <span class="card__link">{url}</span>
     </div>
 </a>

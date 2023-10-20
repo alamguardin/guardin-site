@@ -1,0 +1,19 @@
+---
+export interface Props {
+    image: string;
+    title: string;
+    tag: string;
+    url: string;
+}
+
+const {image, title, tag, url} = Astro.props
+---
+<a href={url} class="product">
+    <figure class="product__picture">
+        <img src={image} alt="">
+    </figure>
+    <div class="product__content">
+        <h3 class="subtitle">{title}</h3>
+    </div>
+    <span class="product__tag">{tag}</span>
+</a>

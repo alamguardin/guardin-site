@@ -23,20 +23,13 @@ body {
 }
 
 section {
-    margin-bottom: 6.25em !important;
-}
-
-.col-2, .col-3 {
-    display: grid;
-    gap: 1.25em;
-    margin: 2.5em 0;
-}
-
-.col-2 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 6.25rem !important;
 }
 
 .col-3 {
+    display: grid;
+    gap: 1.25em;
+    margin: 2.5em 0;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
@@ -66,6 +59,11 @@ a {
 
 .subtitle {
     font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.legend {
+    max-width: 18.75rem;
 }
 
 /* Default button styles */
@@ -81,9 +79,5 @@ a {
 @media screen and (max-width: 640px) {
     :root {
         font-size: 14px;
-    }
-
-    .subtitle {
-        font-size: 1.5rem;
     }
 }

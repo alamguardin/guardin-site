@@ -1,0 +1,19 @@
+---
+import Content from '../../data/home.json'
+import ProductCard from '../ui/ProductCard.astro';
+
+const products = Content.products.list
+---
+<section class="products container">
+    <h2 class="heading-2">{Content.products.title}</h2>
+    <div class="col-3">
+        {products.map((product) => (
+            <ProductCard
+            image={product.thumbnail}
+            title={product.title}
+            tag={product.tag}
+            url={product.url}
+            ></ProductCard>
+        ))}
+    </div>
+</section>

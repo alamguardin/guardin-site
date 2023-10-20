@@ -1,18 +1,19 @@
 ---
-import products from '../../data/products.json'
+import Products from '../../data/home.json'
 import Card from '../ui/Card.astro';
 
-const allProducts = products.list
+const products = Products.building.list
 ---
 
-<section class="container" id="products">
-    <h2 class="subtitle">Construyendo</h2>
-    <div class="col-2">
-        {allProducts.map((product) => (
+<section class="building container" id="products">
+    <p class="legend">{Products.building.legend}</p>
+    <h2 class="heading-2">{Products.building.title}</h2>
+    <div class="col-3">
+        {products.map((product) => (
             <Card
             url={product.url}
-            image={product.img}
-            title={product.title}
+            image={product.brand}
+            title={product.name}
             description={product.description}
             ></Card>
         ))}
