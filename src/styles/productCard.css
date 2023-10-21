@@ -21,6 +21,12 @@
 
 .product__content .subtitle {
     color: var(--black);
+    transform: translateY(100px);
+    transition: .2s all ease;
+}
+
+.product:hover .product__content .subtitle {
+    transform: translateY(0);
 }
 
 .product__tag {
