@@ -83,6 +83,14 @@ a {
     transition: .2s all ease;
 }
 
+.button__primary:hover {
+    background: hsl(239, 100%, 68%);
+}
+
+
+.button__primary:active {
+    transform: scale(0.9);
+}
 /* styles for devices with a size less than or equal to 640px */
 @media screen and (max-width: 640px) {
     :root {
