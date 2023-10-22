@@ -1,6 +1,5 @@
 .navbar {
-    border-bottom: 1px solid var(--gray-dark);
-    padding: 1.5625em 0;
+    padding: 1.562rem 0;
 }
 
 .navbar__container {
@@ -12,23 +11,23 @@
 
 .navbar__logo {
     font-family: var(--font-title);
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: var(--primary-text);
 }
 
 .navbar__links {
     display: flex;
-    gap: 1.25em;
+    gap: 1.25rem;
 }
 
 .navbar__item {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     color: var(--secundary-color);
     transition: .2s all ease;
 }
 
 .navbar__item.icon {
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 .navbar__item:hover {
@@ -37,7 +36,7 @@
 
 .navbar__button {
     display: none;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: var(--secundary-color);
     background: transparent;
     border: none;
@@ -57,20 +56,21 @@
     .navbar__links.active {
         position: absolute;
         right: 0;
-        top: 1.5625em;
-        min-width: 9.375em;
+        top: 1.5625rem;
+        min-width: 9.375rem;
         display: flex;
         flex-direction: column;
         background: var(--black);
         border: 1px solid var(--gray-dark);
-        padding: 0.9375em 1.25em;
-        border-radius: 0.625em;
+        padding: 0.9375rem 1.25rem;
+        border-radius: 0.625rem;
+        z-index: 10;
     }
 
     .navbar__links#social-menu {
         flex-direction: row;
         justify-content: space-between;
-        top: 12.5em;
+        top: 12.5rem;
     }
 
     .navbar__button {
