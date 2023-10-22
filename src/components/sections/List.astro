@@ -1,0 +1,23 @@
+---
+// import Tabs from "../ui/Tabs.astro";
+import TabsItems from '../../data/products.json'
+import ProductCard from '../ui/ProductCard.astro';
+
+const productsList = TabsItems.list
+---
+
+<section class="list container" id="list">
+    <div class="list__group">
+        <h3 class="subtitle">{TabsItems.tabs.items[1]}</h3>
+        <div class="col-3">
+            {productsList.map(product => (
+                <ProductCard
+                image={product.thumbnail}
+                title={product.title}
+                tag={product.tag}
+                url={product.url}
+                ></ProductCard>
+            ))}
+        </div>
+    </div>
+</section>

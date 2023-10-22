@@ -1,0 +1,17 @@
+.tabs__list {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+    list-style: none;
+}
+
+.tabs__item {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.tabs__item.active {
+    background: var(--gray-dark);
+    color: var(--primary-text);
+}

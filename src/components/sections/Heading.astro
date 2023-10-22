@@ -1,0 +1,23 @@
+---
+import ProductsData from '../../data/products.json'
+---
+
+<section class="heading container">
+    <div class="heading__content">
+        <h1 class="heading-1">{ProductsData.heading.title}</h1>
+        <p class="heading__description">{ProductsData.heading.description}</p>
+        <a href="#list" class="button__primary">Descubrir</a>
+    </div>
+</section>
+
+<script>
+    function findFirstWord(selector) {
+        let element = document.querySelector(selector)
+        let firstWord = element.textContent.split(' ')[0]
+        let newContent = `<span>${firstWord}</span>${element.textContent.slice(8)}`
+        
+        element.innerHTML = newContent
+    }
+
+    findFirstWord('.heading__content .heading-1')
+</script>

@@ -1,0 +1,32 @@
+{
+    "heading": {
+        "title": "Descubre recursos y herramientas para tus proyectos",
+        "description": "Disfruta de esta coleción de recursos y herramientas que he creado con mucho ❤️"
+    },
+    "tabs": {
+        "items": ["Todos", "Herramientas", "Astro", "Resend", "Instagram"]
+    },
+    "list": [
+        {
+            "thumbnail": "/bg-hero-section.jpg",
+            "tag": "Free",
+            "title": "Something",
+            "url": "url",
+            "topic": "Resend"
+        },
+        {
+            "thumbnail": "/bg-hero-section.jpg",
+            "tag": "Free",
+            "title": "Something",
+            "url": "url",
+            "topic": "Astro"
+        },
+        {
+            "thumbnail": "/bg-hero-section.jpg",
+            "tag": "Free",
+            "title": "Something",
+            "url": "url",
+            "topic": "Tool"
+        }
+    ]
+}
