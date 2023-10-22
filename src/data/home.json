@@ -8,19 +8,19 @@
       "title": "Construyendo ⚡",
       "list": [
         {
-          "brand": "/goodmorphism-logo.png",
+          "brand": "/guardin-site/goodmorphism-logo.png",
           "name": "Goodmorphism",
           "description": "Generador de morfismos de vidrio con css",
           "url": "https://goodmorphism.vercel.app/"
         },
         {
-          "brand": "/goodmorphism-logo.png",
+          "brand": "/guardin-site/goodmorphism-logo.png",
           "name": "Goodmorphism",
           "description": "Generador de morfismos de vidrio con css",
           "url": "https://goodmorphism.vercel.app/"
         },
         {
-          "brand": "/goodmorphism-logo.png",
+          "brand": "/guardin-site/goodmorphism-logo.png",
           "name": "Goodmorphism",
           "description": "Generador de morfismos de vidrio con css",
           "url": "https://goodmorphism.vercel.app/"
@@ -31,19 +31,19 @@
       "title": "Productos mas populares 🔥",
       "list": [
         {
-          "thumbnail": "/bg-hero-section.jpg",
+          "thumbnail": "/guardin-site/bg-hero-section.jpg",
           "tag": "Free",
           "title": "Something",
           "url": "url"
         },
         {
-          "thumbnail": "/bg-hero-section.jpg",
+          "thumbnail": "/guardin-site/bg-hero-section.jpg",
           "tag": "Free",
           "title": "Something",
           "url": "url"
         },
         {
-          "thumbnail": "/bg-hero-section.jpg",
+          "thumbnail": "/guardin-site/bg-hero-section.jpg",
           "tag": "Free",
           "title": "Something",
           "url": "url"
