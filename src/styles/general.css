@@ -15,6 +15,10 @@ body {
     background: var(--black);
 }
 
+input, button {
+    font-family: var(--font-body);
+}
+
 /* Layout */
 .container {
     max-width: 1120px;
@@ -72,7 +76,11 @@ a {
     background: var(--purple);
     font-size: 0.875rem;
     color: var(--primary-text);
+    outline: none;
+    border: none;
     border-radius: 0.625rem;
+    cursor: pointer;
+    transition: .2s all ease;
 }
 
 /* styles for devices with a size less than or equal to 640px */

@@ -55,23 +55,23 @@
       "title": "Contactame",
       "social": [
         {
-          "icon": "icon-name",
+          "icon": "ri-twitter-fill",
           "url": "url"
         },
         {
-          "icon": "icon-name",
+          "icon": "ri-instagram-fill",
           "url": "url"
         },
         {
-          "icon": "icon-name",
+          "icon": "ri-github-fill",
           "url": "url"
         },
         {
-          "icon": "icon-name",
+          "icon": "ri-dribbble-line",
           "url": "url"
         },
         {
-          "icon": "icon-name",
+          "icon": "ri-linkedin-fill",
           "url": "url"
         }
       ]

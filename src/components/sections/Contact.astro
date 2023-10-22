@@ -1,29 +1,26 @@
 ---
+import ContactData from '../../data/home.json'
 import Form from "../ui/Form.astro";
 ---
-<section class="container" id="contact">
-    <h2 class="subtitle">Contactame</h2>
-    <div class="contact__container">
-        <Form></Form>
-        <div class="contact__social">
-            <h3 class="contact__subtitle">También me puedes encontrar en:</h3>
-            <ul class="contact__list">
-                <li class="contact__item">
-                    <a href=""><i class="ri-github-fill"></i></a>
-                </li>
-                <li class="contact__item">
-                    <a href=""><i class="ri-dribbble-line"></i></a>
-                </li>
-                <li class="contact__item">
-                    <a href=""><i class="ri-twitter-fill"></i></a>
-                </li>
-                <li class="contact__item">
-                    <a href=""><i class="ri-instagram-fill"></i></a>
-                </li>
-                <li class="contact__item">
-                    <a href=""><i class="ri-linkedin-fill"></i></a>
-                </li>
-            </ul>
+<section class="contact container" id="contact">
+    <div class="contact__aside">
+        <figure class="contact__picture">
+            <img src="/bg-contact-section.jpg" alt="" class="contact__img">
+        </figure>
+        <div class="contact__content">
+            <div class="contact__heading">
+                <p class="legend">{ContactData.contact.legend}</p>
+                <h2 class="heading-2">{ContactData.contact.title}</h2>
+            </div>
+            <div class="contact__socials">
+                <p class="subtitle">Encuentrame tambien en:</p>
+                <ul class="contact__list">
+                    {ContactData.contact.social.map(icon => (
+                        <li class="contact__item"><a href={icon.url} class={icon.icon}></a></li>
+                    ))}
+                </ul>
+            </div>
         </div>
     </div>
+    <Form></Form>    
 </section>
