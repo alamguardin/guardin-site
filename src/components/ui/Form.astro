@@ -1,4 +1,4 @@
-<form action="" class="form">
+<form action="" class="form" id="form">
     <div class="form__group">
         <div class="form__input">
             <label class="form__label" for="name">Nombre</label>
@@ -21,3 +21,26 @@
         <button type="submit" class="button__primary">Enviar</button>
     </div>
 </form>
+
+<script>
+    import emailjs from '@emailjs/browser'
+
+    emailjs.init('uIrtQXaaFgAZXAvCW');
+
+    const form = document.querySelector('#form')
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const templateProps = {
+            name: e.target[0].value,
+            to: 'Alam',
+            lastname: e.target[1].value,
+            email: e.target[2].value,
+            message: e.target[3].value,
+            reply_to: 'alamguardin@gmail.com'
+        }
+
+        emailjs.send('service_uz03aav','template_gc2d8kw', templateProps)
+    })
+</script>
