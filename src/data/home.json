@@ -11,42 +11,18 @@
           "brand": "/goodmorphism-logo.png",
           "name": "Goodmorphism",
           "description": "Generador de morfismos de vidrio con css",
-          "url": "https://goodmorphism.vercel.app/"
-        },
-        {
-          "brand": "/goodmorphism-logo.png",
-          "name": "Goodmorphism",
-          "description": "Generador de morfismos de vidrio con css",
-          "url": "https://goodmorphism.vercel.app/"
-        },
-        {
-          "brand": "/goodmorphism-logo.png",
-          "name": "Goodmorphism",
-          "description": "Generador de morfismos de vidrio con css",
-          "url": "https://goodmorphism.vercel.app/"
+          "url": "https://www.goodmorphism.xyz/"
         }
       ]
     },
     "products": {
-      "title": "Productos mas populares 🔥",
+      "title": "Ultimos productos 🔥",
       "list": [
         {
-          "thumbnail": "/bg-hero-section.jpg",
+          "thumbnail": "/goodmorphism-shot.png",
           "tag": "Free",
-          "title": "Something",
-          "url": "url"
-        },
-        {
-          "thumbnail": "/bg-hero-section.jpg",
-          "tag": "Free",
-          "title": "Something",
-          "url": "url"
-        },
-        {
-          "thumbnail": "/bg-hero-section.jpg",
-          "tag": "Free",
-          "title": "Something",
-          "url": "url"
+          "title": "Goodmorphism",
+          "url": "https://www.goodmorphism.xyz/"
         }
       ]
     },
