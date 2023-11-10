@@ -1,5 +1,6 @@
 /* Product Card */
 .product {
+    max-width: 380px;
     aspect-ratio: 4 / 3;
     position: relative;
     border-radius: 0.5em;
