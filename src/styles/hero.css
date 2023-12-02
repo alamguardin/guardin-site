@@ -34,9 +34,16 @@
 }
 
 .hero__title {
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
-    color: var(--black) !important;
+    font-family: var(--font-title);
+    color: var(--white) !important;
+}
+
+.hero__description {
+    max-width: 450px;
+    margin-top: 2.375rem;
+    text-align: center;
 }
 
 .hero__content .button__primary {
@@ -48,10 +55,8 @@
         height: auto;
     }
 
-
-
     .hero__title {
-        font-size: 1.875em;
+        font-size: 2.625rem;
         margin: 1.875rem;
     }
 }

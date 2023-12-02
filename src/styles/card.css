@@ -1,9 +1,15 @@
 .card {
     max-width: 380px;
     padding: 1.25em;
-    background: var(--gray-dark);
+    background: linear-gradient(135deg, rgba(24,24,27,1) 0%, rgba(9,9,11,0)) 100%;
+    border: 1px solid #18181B;
+    border-bottom: none;
     border-radius: 0.625em;
-    transition: 0.2s all ease;
+    transition: 0.4s all ease;
+}
+
+.card:hover {
+    background: linear-gradient(135deg, rgba(24,24,27,1) 50%, rgba(9,9,11,0)) 100%;
 }
 
 .card__heading {

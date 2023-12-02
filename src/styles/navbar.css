@@ -9,15 +9,26 @@
     align-items: center;
 }
 
+.navbar__brand {
+    display: flex;
+    align-items: center;
+}
+
 .navbar__logo {
     font-family: var(--font-title);
     font-size: 1.125rem;
+    font-weight: 500;
     color: var(--primary-text);
+}
+
+.navbar__logo span {
+    margin-right: 1rem;
+    font-family: var(--font-body);
 }
 
 .navbar__links {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 .navbar__item {
@@ -60,8 +71,9 @@
         min-width: 9.375rem;
         display: flex;
         flex-direction: column;
-        background: var(--black);
-        border: 1px solid var(--gray-dark);
+        background: linear-gradient(135deg, rgba(24,24,27,1) 0%, rgba(9,9,11,1)) 100%;
+        border: 1px solid #18181B;
+        border-bottom: none;
         padding: 0.9375rem 1.25rem;
         border-radius: 0.625rem;
         z-index: 10;
@@ -70,7 +82,7 @@
     .navbar__links#social-menu {
         flex-direction: row;
         justify-content: space-between;
-        top: 12.5rem;
+        top: 140px;
     }
 
     .navbar__button {

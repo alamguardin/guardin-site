@@ -13,15 +13,15 @@
 
 :root {
     /* Colors */
-    --black: #121211;
+    --black: #09090B;
     --white: #FAFAFA;
-    --gray: #C1C0BE;
-    --gray-dark: #1C1D1B;
+    --gray: #A1A1AA;
+    --gray-dark: #27272A;
     --purple: #7477FF;
 
     /* Fonts */
-    --font-title: 'Sora', sans-serif;
-    --font-body: 'Manrope', sans-serif;
+    --font-title: 'Cabinet Grotesk', sans-serif;
+    --font-body: 'Satoshi', sans-serif;
     --primary-text: var(--white);
     --secundary-text: var(--gray);
 }

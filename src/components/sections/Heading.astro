@@ -2,13 +2,16 @@
 import ProductsData from '../../data/products.json'
 ---
 
-<section class="heading container">
-    <div class="heading__content">
-        <h1 class="heading-1">{ProductsData.heading.title}</h1>
-        <p class="heading__description">{ProductsData.heading.description}</p>
-        <a href="#list" class="button__primary">Descubrir</a>
+<div class="hero container">
+    <figure class="hero__background">
+        <img src="/pattern.png" alt="" class="hero__image">
+    </figure>
+    <div class="hero__content">
+        <h1 class="hero__title heading-1">{ProductsData.heading.title}</h1>
+        <p class="hero__description">{ProductsData.heading.description}</p>
+        <a href="#contact" class="button__primary">¡Hablemos!</a>
     </div>
-</section>
+</div>
 
 <script>
     function findFirstWord(selector) {
@@ -19,5 +22,5 @@ import ProductsData from '../../data/products.json'
         element.innerHTML = newContent
     }
 
-    findFirstWord('.heading__content .heading-1')
+    findFirstWord('.hero__content .heading-1')
 </script>
