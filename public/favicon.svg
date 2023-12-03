@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" id="gradient_1">
-      <stop offset="0%" stop-color="#121211" />
-      <stop offset="100%" stop-color="#1C1D1B" />
-    </linearGradient>
+    <path d="M1024 0L1024 0L1024 1024L0 1024L0 0L1024 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
   </defs>
-  <g id="Group">
-    <path d="M550 0C688.09 0 800 111.91 800 250L800 550C800 688.09 688.09 800 550 800L250 800C111.91 800 0 688.09 0 550L0 250C0 111.91 111.91 0 250 0L550 0Z" id="Rectangle-3" fill="url(#gradient_1)" stroke="none" />
-    <path d="M286.565 438.435L286.565 438.435L286.565 512C286.565 556.189 250.754 592 206.565 592L133 592L133 518.435C133 474.246 168.811 438.435 213 438.435L286.565 438.435Z" id="Rectangle" fill="#FAFAFA" stroke="none" />
-    <path d="M477.283 323.674L477.283 323.674L477.283 474.022C477.283 518.21 441.471 554.022 397.283 554.022L323.718 554.022L323.718 403.674C323.718 359.486 359.529 323.674 403.718 323.674L477.283 323.674Z" id="Rectangle-Copy" fill="#FAFAFA" stroke="none" />
-    <path d="M668 208.088L668 208.088L668 435.218C668 479.406 632.189 515.218 588 515.218L514.435 515.218L514.435 287.088C514.435 243.452 549.799 208.088 593.435 208.088L668 208.088Z" id="Rectangle-Copy-2" fill="#FAFAFA" stroke="none" />
+  <g id="Icon 1024" clip-path="url(#clip_1)">
+    <path d="M1024 0L1024 0L1024 1024L0 1024L0 0L1024 0Z" id="Icon-1024" fill="#09090B" stroke="none" />
+    <path d="M229.6 506.2C260 506.2 286.4 480.6 286.4 451C286.4 419.8 260 394.2 229.6 394.2C198.4 394.2 172 419.8 172 451C172 480.6 198.4 506.2 229.6 506.2L229.6 506.2ZM229.6 806.2C260 806.2 286.4 780.6 286.4 750.2C286.4 719 260 693.4 229.6 693.4C198.4 693.4 172 719 172 750.2C172 780.6 198.4 806.2 229.6 806.2L229.6 806.2ZM422.4 796.6L648.8 219L573.6 219L348 796.6L422.4 796.6ZM625.6 796.6L852 219L776.8 219L551.2 796.6L625.6 796.6Z" id="Path" fill="#FAFAFA" stroke="none" />
   </g>
 </svg>
