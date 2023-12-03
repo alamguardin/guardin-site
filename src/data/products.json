@@ -8,25 +8,11 @@
     },
     "list": [
         {
-            "thumbnail": "/bg-hero-section.jpg",
+            "thumbnail": "/goodmorphism-shot.png",
             "tag": "Free",
-            "title": "Something",
-            "url": "url",
-            "topic": "Resend"
-        },
-        {
-            "thumbnail": "/bg-hero-section.jpg",
-            "tag": "Free",
-            "title": "Something",
-            "url": "url",
-            "topic": "Astro"
-        },
-        {
-            "thumbnail": "/bg-hero-section.jpg",
-            "tag": "Free",
-            "title": "Something",
-            "url": "url",
-            "topic": "Tool"
+            "title": "Goodmorphism",
+            "url": "https://www.goodmorphism.xyz/",
+            "topic": "tool"
         }
     ]
 }

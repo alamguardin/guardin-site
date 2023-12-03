@@ -17,12 +17,12 @@
 .footer__content {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2.375rem;
 }
 
 .footer__links {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 .footer__item {
