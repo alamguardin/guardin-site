@@ -5,13 +5,25 @@
     },
     "building": {
       "legend": "Me gusta trabajar en diferentes proyectos, mira que estoy construyendo actualmente...",
-      "title": "Construyendo ⚡",
+      "title": "Que ando haciendo... ⚡",
       "list": [
         {
           "brand": "/goodmorphism-logo.png",
           "name": "Goodmorphism",
           "description": "Generador de morfismos de vidrio con css",
           "url": "https://www.goodmorphism.xyz/"
+        },
+        {
+          "brand": "/default-logo.png",
+          "name": "Astrodev",
+          "description": "Plantilla para Portfolio de desarrollador",
+          "url": "https://github.com/alamguardin/astrodev"
+        },
+        {
+          "brand": "/default-logo.png",
+          "name": "Daily UI",
+          "description": "100 retos de diseño",
+          "url": "https://github.com/alamguardin/daily-ui"
         }
       ]
     },
