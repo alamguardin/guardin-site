@@ -44,23 +44,23 @@
       "social": [
         {
           "icon": "ri-twitter-fill",
-          "url": "url"
+          "url": "https://twitter.com/alamguardin"
         },
         {
           "icon": "ri-instagram-fill",
-          "url": "url"
+          "url": "https://www.instagram.com/alamguardin.xyz/"
         },
         {
           "icon": "ri-github-fill",
-          "url": "url"
+          "url": "https://github.com/alamguardin"
         },
         {
           "icon": "ri-dribbble-line",
-          "url": "url"
+          "url": "https://dribbble.com/alamguardin"
         },
         {
           "icon": "ri-linkedin-fill",
-          "url": "url"
+          "url": "https://www.linkedin.com/in/alamguardin/"
         }
       ]
     }

@@ -13,7 +13,7 @@ import Form from "../ui/Form.astro";
             <p class="subtitle">Encuentrame tambien en:</p>
             <ul class="contact__list">
                 {ContactData.contact.social.map(icon => (
-                    <li class="contact__item"><a href={icon.url} class={icon.icon}></a></li>
+                    <li class="contact__item"><a href={icon.url} class={icon.icon} aria-label="Social"></a></li>
                 ))}
             </ul>
         </div>
