@@ -1,10 +1,11 @@
 ---
+import Pattern from '../../assets/pattern.svg'
 import ProductsData from '../../data/products.json'
 ---
 
 <div class="hero container">
     <figure class="hero__background">
-        <img src="/pattern.png" alt="" class="hero__image">
+        <img src={Pattern.src} alt="" class="hero__image">
     </figure>
     <div class="hero__content">
         <h1 class="hero__title heading-1">{ProductsData.heading.title}</h1>
