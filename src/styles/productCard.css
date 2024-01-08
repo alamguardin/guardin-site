@@ -1,6 +1,6 @@
 /* Product Card */
 .product {
-    max-width: 380px;
+    max-width: 100%;
 }
 
 .product__picture {
