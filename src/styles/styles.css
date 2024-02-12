@@ -180,6 +180,10 @@ img {
     border-radius: 0.5rem;
 }
 
+.tag-text {
+    font-size: 0.875rem;
+}
+
 .tag svg {
     width: 1.125rem;
     fill: var(--neutral-50);
