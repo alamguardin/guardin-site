@@ -6,8 +6,13 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import SkillTag from '../components/SkillTag.astro';
-import ContactButton from '../components/ContactButton.astro'
-import SocialList from '../components/SocialList.astro'
+import ContactButton from '../components/ContactButton.astro';
+import SocialList from '../components/SocialList.astro';
+
+// Data in Json
+import Data from '../data/data.json';
+
+const data = Data.projects;
 ---
 
 <Layout title="Alam Guardin">
@@ -20,24 +25,17 @@ import SocialList from '../components/SocialList.astro'
 	<section class="projects" id="projects">
 		<h2 class="subheading">Proyectos</h2>
 		<div class="projects-container">
-			<ProjectCard
-				src='https://google.com'
-				name='Lorem ipsum dolor'
-				isActive={true}
-				description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis ipsam necessitatibus dolorem deserunt quas nihil quos corrupti delectus dignissimos deleniti tenetur, voluptatibus quo modi rerum. Cupiditate animi aspernatur iste.'
-			></ProjectCard>
-			<ProjectCard
-				src='https://google.com'
-				name='Lorem ipsum dolor'
-				isActive={false}
-				description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis ipsam necessitatibus dolorem deserunt quas nihil quos corrupti delectus dignissimos deleniti tenetur, voluptatibus quo modi rerum. Cupiditate animi aspernatur iste.'
-			></ProjectCard>
-			<ProjectCard
-				src='https://google.com'
-				name='Lorem ipsum dolor'
-				isActive={false}
-				description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis ipsam necessitatibus dolorem deserunt quas nihil quos corrupti delectus dignissimos deleniti tenetur, voluptatibus quo modi rerum. Cupiditate animi aspernatur iste.'
-			></ProjectCard>
+			{
+				data?.map(project => {
+					return (
+					<ProjectCard
+						src={project.src}
+						name={project.name}
+						isActive={project.isActive}
+						description={project.description}
+					></ProjectCard> 
+				)})
+			}
 		</div>
 	</section>
 	<!-- Skills section -->
