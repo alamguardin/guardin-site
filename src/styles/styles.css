@@ -122,6 +122,32 @@ img {
     border-radius: 0.5rem;
 }
 
+.card:hover {
+    animation: border-animation 2s ease alternate forwards;
+}
+
+@keyframes border-animation {
+    0% {
+       border-top: 1px solid var(--violet-500); 
+    }
+
+    25% {
+        border-left: 1px solid var(--violet-500);
+    }
+
+    50% {
+        border-bottom: 1px solid var(--violet-500);
+    }
+
+    75% {
+        border-right: 1px solid var(--violet-500);
+    }
+
+    100% {
+        border-color: var(--violet-500);
+    }
+}
+
 .card-heading {
     display: flex;
     align-items: center;
