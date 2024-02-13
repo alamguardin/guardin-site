@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "name": "Goodmorphism",
+            "description": "Goodmorphism es un Generador de CSS que te permite crear fácilmente morfismos de vidrio adaptados a tus necesidades. Una vez que hayas configurado todo a tu gusto, solo tienes que copiar el código generado y aplicarlo a tu diseño.",
+            "isActive": false,
+            "src": "https://www.goodmorphism.xyz/"
+        },
+        {
+            "name": "Astrodev",
+            "description": "Astrodev es una plantilla de Astro, para el perfil de un desarrollador, adaptable también para diseñadores.",
+            "isActive": false,
+            "src": "https://astrodev-template.netlify.app/"
+        }
+    ]
+}

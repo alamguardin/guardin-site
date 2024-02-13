@@ -1,0 +1,18 @@
+---
+export interface Props {
+    src: string;
+    name: string;
+    isActive: boolean;
+    description: string;
+}
+
+const { src, name, isActive, description } = Astro.props;
+---
+
+<a href={src} class="card">
+    <div class="card-heading">
+        <h3 class="card-name">{name}</h3>
+        <span class={ isActive ? 'card-active is-active' : 'card-active' }></span>
+    </div>
+    <p class="card-description">{description}</p>
+</a>
