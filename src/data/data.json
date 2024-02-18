@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Life",
+            "description": "Life es un sistema para gestionar tareas personales del día a día dentro de la consola, terminal etc. Esto con la intención de poder ahorrar tiempo al entrar en un software como Notion, Asana o Trello.",
+            "isActive": true,
+            "src": "https://github.com/alamguardin/life"
+        },
+        {
             "name": "Goodmorphism",
             "description": "Goodmorphism es un Generador de CSS que te permite crear fácilmente morfismos de vidrio adaptados a tus necesidades. Una vez que hayas configurado todo a tu gusto, solo tienes que copiar el código generado y aplicarlo a tu diseño.",
             "isActive": false,
