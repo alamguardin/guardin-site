@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Fun UI Projects",
+            "description": "Colección de componentes creados con html, css y algo de javaScript para copiar y pegar en cualquier proyecto.",
+            "isActive": true,
+            "src": "https://github.com/alamguardin/fun-ui-projects"
+        },
+        {
             "name": "Life",
             "description": "Life es un sistema para gestionar tareas personales del día a día dentro de la consola, terminal etc. Esto con la intención de poder ahorrar tiempo al entrar en un software como Notion, Asana o Trello.",
             "isActive": true,
