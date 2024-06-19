@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "Fun UI Projects",
+            "description": "Galeria de asombrosos componentes creados con Html, Css y Javascript.",
+            "isActive": true,
+            "src": "https://fun-ui-projects.vercel.app/"
+        },
+        {
             "name": "Couler",
             "description": "Couler es una lista de tareas en tu terminal, creada para aumentar tu productividad sin salir del entorno de desarrollo.",
             "isActive": true,
