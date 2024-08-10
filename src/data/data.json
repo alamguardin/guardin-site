@@ -1,9 +1,15 @@
 {
     "projects": [
         {
+            "name": "Astrolink",
+            "description": "Una plantilla para compartir tus enlaces favoritos, con un diseño sencillo y elegante.",
+            "isActive": true,
+            "src": "https://astrolink.vercel.app/"
+        },
+        {
             "name": "Fun UI Projects",
             "description": "Galeria de asombrosos componentes creados con Html, Css y Javascript.",
-            "isActive": true,
+            "isActive": false,
             "src": "https://fun-ui-projects.vercel.app/"
         },
         {
