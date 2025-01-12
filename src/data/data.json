@@ -1,34 +1,28 @@
 {
-    "projects": [
-        {
-            "name": "Astrolink",
-            "description": "Una plantilla para compartir tus enlaces favoritos, con un diseño sencillo y elegante.",
-            "isActive": true,
-            "src": "https://astrolink.vercel.app/"
-        },
-        {
-            "name": "Fun UI Projects",
-            "description": "Galeria de asombrosos componentes creados con Html, Css y Javascript.",
-            "isActive": false,
-            "src": "https://fun-ui-projects.vercel.app/"
-        },
-        {
-            "name": "Couler",
-            "description": "Couler es una lista de tareas en tu terminal, creada para aumentar tu productividad sin salir del entorno de desarrollo.",
-            "isActive": true,
-            "src": "https://github.com/alamguardin/couler"
-        },
-        {
-            "name": "Goodmorphism",
-            "description": "Goodmorphism es un Generador de CSS que te permite crear fácilmente morfismos de vidrio adaptados a tus necesidades. Una vez que hayas configurado todo a tu gusto, solo tienes que copiar el código generado y aplicarlo a tu diseño.",
-            "isActive": false,
-            "src": "https://www.goodmorphism.xyz/"
-        },
-        {
-            "name": "Astrodev",
-            "description": "Astrodev es una plantilla de Astro, para el perfil de un desarrollador, adaptable también para diseñadores.",
-            "isActive": false,
-            "src": "https://astrodev-template.netlify.app/"
-        }
-    ]
+	"projects": [
+		{
+			"name": "Tryit",
+			"description": "Un playground de JavaScript para practicar, hacer pruebas, explorar y visualizar tus ideas, obteniendo resultados mientras escribes.",
+			"isActive": true,
+			"src": "https://tryit-flame.vercel.app/"
+		},
+		{
+			"name": "Astrolink",
+			"description": "Una plantilla para compartir tus enlaces favoritos, con un diseño sencillo y elegante.",
+			"isActive": false,
+			"src": "https://astrolink.vercel.app/"
+		},
+		{
+			"name": "Goodmorphism",
+			"description": "Goodmorphism es un Generador de CSS que te permite crear fácilmente morfismos de vidrio adaptados a tus necesidades. Una vez que hayas configurado todo a tu gusto, solo tienes que copiar el código generado y aplicarlo a tu diseño.",
+			"isActive": false,
+			"src": "https://www.goodmorphism.xyz/"
+		},
+		{
+			"name": "Astrodev",
+			"description": "Astrodev es una plantilla de Astro, para el perfil de un desarrollador, adaptable también para diseñadores.",
+			"isActive": false,
+			"src": "https://astrodev-template.netlify.app/"
+		}
+	]
 }
